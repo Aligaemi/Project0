@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=vera+Round&display=swap"
+    />
+  </head>
+  <body>
+    <a href="./imagesearch.html"> images </a>
+    <img src="./download.png" alt="Google Logo" class="logo" />
+    <div class="header">
+      <div class="searchbox">
+        <img src="./search-icon.png" alt="search icon" class="searchicon" />
+        <div>
+          <form id="my-form" action="https://google.com/search">
+            <label for="name"></label>
+            <input type="text" name="q" />
+          </form>
+        </div>
+        <img
+          src="./490-4900285_voice-search-icon-png-transparent-png.png"
+          alt="voice search"
+          class="voicesearch"
+        />
+      </div>
+    </div>
+    <div class="btn-group">
+      <button class="google-search">
+        <input
+          type="submit"
+          form="my-form"
+          name="btnK"
+          value="Google Search"
+          class="google-search"
+        />
+      </button>
+      <button class="feelng-lucky-button">
+        <input
+          type="submit"
+          form="my-form"
+          name="btnI"
+          value="I am Feeling Lucky"
+          class="feelng-lucky-button"
+          formaction="https://google.com/search?&btnI=1"
+        />
+      </button>
+    </div>
+  </body>
+</html>

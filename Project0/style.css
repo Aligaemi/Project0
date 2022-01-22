@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "verela round", sans-serif;
+}
+.header {
+  width: 100%;
+  height: 45vh;
+  background: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  width: 285px;
+  height: 90%;
+  display: block;
+  margin-top: 55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+a:link,
+a:visited {
+  position: absolute;
+  top: 16px;
+  right: 32px;
+  font-size: 18px;
+  float: right;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+.searchbox {
+  margin-top: -150px;
+  border-radius: 55px;
+  padding: 12px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  background: white;
+}
+.voicesearch {
+  margin-top: -2px;
+  margin-right: +1;
+  width: 25px;
+}
+.searchicon {
+  margin-top: -2px;
+  margin-left: +2;
+  width: 30px;
+}
+input {
+  font-size: 20.5px;
+  width: 500px;
+  border: 0;
+  background: transparent;
+  outline: none;
+}
+.btn-group {
+  display: block;
+  text-align: center;
+  margin-top: -147px;
+}
+.google-search {
+  width: 100px;
+  border-radius: 5px;
+  border-width: 1px;
+  width: 155px;
+  font-size: 15px;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.01em;
+  padding-right: 0.01em;
+}
+.feelng-lucky-button {
+  border-radius: 5px;
+  border-width: 1px;
+  width: 155px;
+  font-size: 15px;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  padding-left: 0.01em;
+  padding-right: 0.01em;
+}
