@@ -1,16 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-</form>
-<form class="advanced search" action="https://www.google.com/advanced_search">
-  <input type="text" name="q" />
-  <input type="submit" value="Advanced Search" />
-</form>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a href="./index.html">
+      <img
+        src="./Images/Google-logo.png"
+        alt="Google Logo"
+        class="secondary-logo"
+      />
+    </a>
+    <a href="./index.html" id="googlesearch-btn"> Google Search </a>
+    <div id="header">
+      <p class="advanced-search-header">Advanced Search</p>
+    </div>
+    <div class="h-line"></div>
+    <div class="mza7yc">
+      <p class="h2">Find pages with...</p>
+      <div class="empty-space"></div>
+      <p class="description">To do this in the search box.</p>
+      <br />
+      <div class="At">
+        <p class="A1-1">all these words:</p>
+        <p class="A2-1">this exact word or phrase:</p>
+        <p class="A3-1">any of these words:</p>
+        <p class="A4-1">none of these words:</p>
+      </div>
+      <form id="ac" action="https://google.com/search?as_q&as_epq&as_oq&as_eq">
+        <label for="name"></label>
+        <input class="A1-2" type="text" name="as_q" />
+        <input class="A2-2" type="text" name="as_epq" />
+        <input class="A3-2" type="text" name="as_oq" />
+        <input class="A4-2" type="text" name="as_eq" />
+      </form>
+      <div class="search-type">
+        <p class="A1-3">Type the important words: tri-colour rat terrier</p>
+        <p class="A2-3">Put exact words in quotes: "rat terrier"</p>
+        <p class="A3-3">
+          Type OR between all the words you want: miniature OR standard
+        </p>
+        <p class="A4-3">
+          Put a minus sign just before words that you don't want:
+        </p>
+        <p class="A4-4">-rodent, -"Jack Russell"</p>
+      </div>
+    </div>
+    <div class="smt">
+      <button class="jfk-button">
+        <input
+          type="submit"
+          form="ac"
+          name=""
+          value="Advanced Search"
+          class="jfk-button"
+          formaction="https://google.com/search?as_q&as_epq&as_oq&as_eq"
+        />
+      </button>
+    </div>
+  </body>
 </html>

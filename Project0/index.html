@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Google</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -12,11 +12,16 @@
     />
   </head>
   <body>
-    <a href="./imagesearch.html"> images </a>
-    <img src="./download.png" alt="Google Logo" class="logo" />
+    <a href="./imagesearch.html" id="imagesearch-btn"> images </a>
+    <a href="./advancedsearch.html" id="advancedsearch-btn">Advanced Search </a>
+    <img src="./Images/Google-logo.png" alt="Google Logo" class="Main-logo" />
     <div class="header">
       <div class="searchbox">
-        <img src="./search-icon.png" alt="search icon" class="searchicon" />
+        <img
+          src="./Images/search-icon.png"
+          alt="search icon"
+          class="searchicon"
+        />
         <div>
           <form id="my-form" action="https://google.com/search">
             <label for="name"></label>
@@ -24,7 +29,7 @@
           </form>
         </div>
         <img
-          src="./490-4900285_voice-search-icon-png-transparent-png.png"
+          src="./Images/voice-search-icon-png.png"
           alt="voice search"
           class="voicesearch"
         />
@@ -35,19 +40,19 @@
         <input
           type="submit"
           form="my-form"
-          name="btnK"
           value="Google Search"
           class="google-search"
+          id="cursor"
         />
       </button>
-      <button class="feelng-lucky-button">
+      <button class="feeling-lucky-btn">
         <input
           type="submit"
           form="my-form"
-          name="btnI"
-          value="I am Feeling Lucky"
-          class="feelng-lucky-button"
+          value="I'm Feeling Lucky"
+          class="feeling-lucky-btn"
           formaction="https://google.com/search?&btnI=1"
+          id="cursor"
         />
       </button>
     </div>

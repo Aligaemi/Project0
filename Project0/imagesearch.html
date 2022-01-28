@@ -4,13 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Google images</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <img src="./download.png" alt="Google Logo" class="logo" />
-    <form class="image search" action="https://google.com/images">
-      <input type="text" name="q" />
-      <input type="submit" value="Image Search" />
-    </form>
+    <a href="./index.html" id="googlesearch-btn"> Google Search </a>
+    <img src="./Images/Google-logo.png" alt="Google Logo" class="Main-logo" />
+    <div class="header">
+      <div class="searchbox">
+        <img
+          src="./Images/search-icon.png"
+          alt="search icon"
+          class="searchicon"
+        />
+        <div>
+          <form id="my-form" action="https://images.google.com/images">
+            <label for="name"></label>
+            <input type="text" name="q" />
+          </form>
+        </div>
+        <img
+          src="./Images/voice-search-icon-png.png"
+          alt="voice search"
+          class="voicesearch"
+        />
+      </div>
+    </div>
+    <div class="btn-group">
+      <button class="google-search">
+        <input
+          type="submit"
+          form="my-form"
+          name="btnK"
+          value="Image Search"
+          class="image-search-btn"
+          id="cursor"
+        />
+      </button>
+    </div>
   </body>
 </html>

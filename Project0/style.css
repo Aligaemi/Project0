@@ -3,15 +3,7 @@
   padding: 0;
   font-family: "verela round", sans-serif;
 }
-.header {
-  width: 100%;
-  height: 45vh;
-  background: white;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-img {
+.Main-logo {
   width: 285px;
   height: 90%;
   display: block;
@@ -19,10 +11,50 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-a:link,
+.secondary-logo {
+  width: 73.5px;
+  height: 93%;
+  display: block;
+  margin-top: 23px;
+  margin-left: 20px;
+  margin-right: auto;
+}
+
+#imagesearch-btn:link,
 a:visited {
   position: absolute;
   top: 16px;
+  right: 64px;
+  font-size: 18px;
+  float: right;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+#googlesearch-btn:link,
+a:visited {
+  position: absolute;
+  top: 16px;
+  right: 40px;
+  font-size: 18px;
+  float: right;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+#imagesearch-btn:hover,
+#imagesearch-btn:active {
+  text-decoration: underline;
+}
+#googlesearch-btn:hover,
+#goolgesearch-btn:active {
+  text-decoration: underline;
+}
+#advancedsearch-btn:link {
+  position: absolute;
+  top: 35px;
   right: 32px;
   font-size: 18px;
   float: right;
@@ -31,9 +63,17 @@ a:visited {
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
-a:hover,
-a:active {
+#advancedsearch-btn:hover,
+#advancedsearch:active {
   text-decoration: underline;
+}
+.header {
+  width: 100%;
+  height: 45vh;
+  background: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .searchbox {
   margin-top: -150px;
@@ -65,26 +105,292 @@ input {
 .btn-group {
   display: block;
   text-align: center;
-  margin-top: -147px;
+  margin-top: -140px;
 }
 .google-search {
-  width: 100px;
-  border-radius: 5px;
-  border-width: 1px;
+  border: rgb(179, 179, 179) solid transparent;
+  border: none;
+  border-radius: 7px;
   width: 155px;
-  font-size: 15px;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  padding-left: 0.01em;
-  padding-right: 0.01em;
+  font-size: 14px;
+  padding-top: 0.4em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background: none;
 }
-.feelng-lucky-button {
-  border-radius: 5px;
-  border-width: 1px;
+.feeling-lucky-btn {
+  border: rgb(179, 179, 179) solid transparent;
+  border: none;
+  border-radius: 7px;
   width: 155px;
-  font-size: 15px;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  padding-left: 0.01em;
-  padding-right: 0.01em;
+  font-size: 14px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background: none;
+}
+.image-search-btn {
+  border: rgb(179, 179, 179) solid transparent;
+  border: none;
+  border-radius: 7px;
+  width: 155px;
+  font-size: 14px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background: none;
+}
+#cursor:hover,
+#cursor:active {
+  border: rgb(201, 201, 201) solid;
+  border-radius: 5px;
+  border-width: 1.5px;
+  width: 155px;
+  font-size: 14px;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  background: none;
+  cursor: pointer;
+}
+#header {
+  margin: 25px 35px 25px 35px;
+}
+.advanced-search-header {
+  color: #d93025;
+  font-size: 20px;
+  margin-top: 41px;
+  margin-left: 10px;
+}
+.h-line {
+  border-bottom: 1px solid #ebebeb;
+}
+.mza7yc {
+  width: auto;
+  display: inline-block;
+  max-width: 1140px;
+  min-width: 200px;
+  margin: 40px 2% 0;
+}
+.h2 {
+  display: inline-block;
+  min-width: 167px;
+  width: 16%;
+  font-size: 16px;
+  min-height: 42px;
+  font-weight: 500;
+  color: #333;
+  vertical-align: middle;
+}
+.empty-space {
+  display: inline-block;
+  min-width: 167px;
+  min-height: 41px;
+  vertical-align: middle;
+  width: 50%;
+}
+.description {
+  float: right;
+  display: block;
+  width: 33%;
+  font-size: 13px;
+  font-weight: 700;
+  color: #777;
+  padding-left: 5px;
+}
+.At {
+  display: inline-block;
+  height: 240px;
+  width: 180px;
+}
+#ac {
+  display: inline-block;
+  vertical-align: top;
+  width: 580px;
+  height: 240px;
+}
+.search-type {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 0px;
+  height: 240px;
+  width: 370px;
+}
+.A1-1 {
+  display: block;
+  color: #222;
+  font-size: 13px;
+  line-height: 16px;
+  float: left;
+  min-width: 167px;
+  height: 42px;
+  margin-top: 5px;
+}
+.A1-2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 570px;
+  min-width: 167px;
+  min-height: 28px;
+  font-size: small;
+  margin-top: -1px;
+  margin-bottom: 18px;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+}
+.A1-3 {
+  margin-top: 4px;
+  margin-bottom: 30px;
+  display: block;
+  min-width: 160px;
+  color: #555;
+  font-size: 11px;
+  padding-top: 5px;
+  padding-left: 5px;
+  position: relative;
+}
+
+.A2-1 {
+  display: block;
+  color: #222;
+  font-size: 13px;
+  line-height: 16px;
+  float: left;
+  min-width: 167px;
+  width: 16%;
+  height: 42px;
+  margin-top: 5px;
+}
+.A2-2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 570px;
+  min-width: 167px;
+  min-height: 28px;
+  font-size: small;
+  margin-bottom: 18px;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+}
+.A2-3 {
+  display: block;
+  min-width: 160px;
+  margin: 0 0 8px 1%;
+  color: #555;
+  font-size: 11px;
+  padding-top: 5px;
+  padding-left: 5px;
+  position: relative;
+}
+.A3 {
+  display: block;
+}
+.A3-1 {
+  color: #222;
+  font-size: 13px;
+  line-height: 16px;
+  float: left;
+  min-width: 167px;
+  width: 16%;
+  height: 42px;
+  vertical-align: middle;
+  padding-top: 1px;
+  margin-top: 5px;
+}
+.A3-2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 570px;
+  min-width: 167px;
+  min-height: 28px;
+  font-size: small;
+  margin-bottom: 18px;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+}
+.A3-3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: block;
+  min-width: 160px;
+  color: #555;
+  font-size: 11px;
+  padding-top: 5px;
+  padding-left: 5px;
+  position: relative;
+}
+.A4 {
+  display: block;
+}
+.A4-1 {
+  color: #222;
+  font-size: 13px;
+  line-height: 16px;
+  float: left;
+  min-width: 167px;
+  width: 16%;
+  height: 42px;
+  vertical-align: middle;
+  padding-top: 1px;
+  margin-top: 5px;
+}
+.A4-2 {
+  display: inline-block;
+  vertical-align: middle;
+  width: 570px;
+  min-width: 167px;
+  min-height: 28px;
+  font-size: small;
+  border-radius: 1px;
+  border: 1px solid #d9d9d9;
+}
+.A4-3 {
+  margin-top: 26px;
+  display: block;
+  min-width: 160px;
+  color: #555;
+  font-size: 11px;
+  padding-top: 5px;
+  padding-left: 5px;
+  position: relative;
+}
+.A4-4 {
+  margin-top: -3px;
+  display: block;
+  min-width: 160px;
+  color: #555;
+  font-size: 11px;
+  padding-top: 5px;
+  padding-left: 5px;
+  position: relative;
+}
+.jfk-button {
+  border-radius: 2px;
+  cursor: default;
+  font-size: 11px;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  user-select: none;
+  line-height: 100%;
+  height: 30px;
+  width: 120px;
+  min-width: 50px;
+  background-color: #4d90fe;
+  background-image: (top, #4d90fe, #4787ed);
+  border: 1px #3079ed;
+  color: #fff;
+}
+.jfk-button :hover {
+  cursor: pointer;
+  background: #8ab4f8;
+  color: #fff;
+  border: 1px;
+  border-color: #8ab4f8;
 }
